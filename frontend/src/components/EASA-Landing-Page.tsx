@@ -3,7 +3,7 @@ export default function EasaLanding() {
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm shadow-lg">
-        <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+        <nav className="w-full px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-md bg-green-600 flex items-center justify-center text-white font-bold">E</div>
             <div>
@@ -26,7 +26,7 @@ export default function EasaLanding() {
         </nav>
       </header>
 
-      <main className="max-w-7xl mx-auto px-6 lg:px-8">
+      <main className="w-full px-6 lg:px-8">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center py-20">
           <div>
             <p className="inline-flex items-center gap-2 text-sm font-medium text-green-700 uppercase">Solar • Clean • Future-ready</p>
@@ -58,9 +58,8 @@ export default function EasaLanding() {
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
               <div className="relative h-96">
                 <div className="flex animate-[slide_15s_infinite] h-full">
-                  <img src="https://picsum.photos/800/400?random=10" alt="Solar Farm" className="w-full h-full object-cover flex-shrink-0" />
-                  <img src="https://picsum.photos/800/400?random=11" alt="Solar Panels" className="w-full h-full object-cover flex-shrink-0" />
-                  <img src="https://picsum.photos/800/400?random=12" alt="Green Hydrogen" className="w-full h-full object-cover flex-shrink-0" />
+                  <img src="big-card.png" alt="Solar Farm" className="w-full h-full object-cover flex-shrink-0" />
+                 
                 </div>
               </div>
             </div>
@@ -70,7 +69,7 @@ export default function EasaLanding() {
         <section id="services" className="py-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold">Our Services</h3>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Comprehensive solar energy solutions and asset management driving the clean energy transition.</p>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Comprehensive solar energy solutions and asset management driving the clean energy transition.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -116,7 +115,7 @@ export default function EasaLanding() {
         <section id="projects" className="py-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold">Projects Done Till Now</h3>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Leading solar energy developments across the Middle East, from utility-scale farms to green hydrogen facilities.</p>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Leading solar energy developments across the Middle East, from utility-scale farms to green hydrogen facilities.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -151,13 +150,13 @@ export default function EasaLanding() {
           </div>
         </section>
 
-        <section id="contact" className="py-16 bg-gray-50">
+        <section id="contact" className="py-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold">Contact Us</h3>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Get in touch for solar energy projects, green hydrogen solutions, and asset management services.</p>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Get in touch for solar energy projects, green hydrogen solutions, and asset management services.</p>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+          <div className="w-full max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-xl font-semibold mb-6">Send us a message</h4>
@@ -174,7 +173,7 @@ export default function EasaLanding() {
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                     <textarea id="message" rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Tell us about your project"></textarea>
                   </div>
-                  <button type="submit" className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors">Send Message</button>
+                  <a href="mailto:ceo@easagroup.com" className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors inline-block text-center">Send Message</a>
                 </form>
               </div>
 
@@ -191,7 +190,7 @@ export default function EasaLanding() {
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-900">Email</h5>
-                    <p className="text-gray-600">md@easagroup.com</p>
+                    <p className="text-gray-600">ceo@easagroup.com</p>
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-900">Business Hours</h5>
@@ -204,44 +203,9 @@ export default function EasaLanding() {
         </section>
       </main>
 
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-md bg-green-600 flex items-center justify-center text-white font-bold">E</div>
-                <div>
-                  <h3 className="text-lg font-semibold">EASA Group</h3>
-                  <p className="text-sm text-gray-400">Solar Energy & Green Hydrogen</p>
-                </div>
-              </div>
-              <p className="text-gray-400 mb-4">Leading the solar revolution in the Middle East with utility-scale solar farms, green hydrogen production, and comprehensive asset management services.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Asset Management</li>
-                <li>Solar Energy</li>
-                <li>Green Hydrogen</li>
-                <li>O&M Services</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>Level 6, Code Business Tower<br />Al-Barsha Road, Dubai, UAE</p>
-                <p>+971 50 184 5043</p>
-                <p>md@easagroup.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
-            <div className="text-sm text-gray-400">© {new Date().getFullYear()} EASA Group — Solar Energy & Green Hydrogen. All rights reserved.</div>
-            <div className="text-sm text-gray-400 mt-4 md:mt-0">Powering the future with clean energy</div>
-          </div>
+      <footer className="py-4 border-t">
+        <div className="w-full px-6 lg:px-8 text-center">
+          <p className="text-sm text-gray-600">© {new Date().getFullYear()} EASA Group — Solar Energy & Green Hydrogen. All rights reserved.</p>
         </div>
       </footer>
     </div>
