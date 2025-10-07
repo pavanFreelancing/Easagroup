@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function EasaLanding() {
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
