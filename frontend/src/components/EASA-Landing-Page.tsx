@@ -1,9 +1,10 @@
+import React from "react";
 
 export default function EasaLanding() {
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm shadow-lg">
-        <nav className="w-full px-6 lg:px-8 py-4 flex items-center justify-between">
+        <nav className="w-full px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-md bg-green-600 flex items-center justify-center text-white font-bold">E</div>
             <div>
@@ -26,21 +27,21 @@ export default function EasaLanding() {
         </nav>
       </header>
 
-      <main className="w-full px-6 lg:px-8">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center py-20">
+      <main className="w-full px-4 sm:px-6 lg:px-8">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center py-12 sm:py-16 lg:py-20">
           <div>
             <p className="inline-flex items-center gap-2 text-sm font-medium text-green-700 uppercase">Solar • Clean • Future-ready</p>
-            <h2 className="mt-6 text-4xl lg:text-5xl font-extrabold leading-tight">
+            <h2 className="mt-6 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight">
               Leading the solar revolution in
               <span className="text-green-600"> the Middle East</span>
             </h2>
             <p className="mt-6 text-gray-600 max-w-xl">EASA Group specializes in utility-scale solar farms, green hydrogen production, and comprehensive asset management services across the MENA region.</p>
 
-            <div className="mt-8 flex sm:flex-row gap-4 items-center justify-center">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-start">
               <a href="#projects" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors">View Projects</a>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg text-sm text-gray-600">
+            <div className="mt-8 grid grid-cols-1 gap-4 max-w-lg text-sm text-gray-600">
               <div className="space-y-1">
                 <div className="text-xs text-gray-500">Head Office</div>
                 <div className="font-medium">Level 6, Code Business Tower, Al-Barsha Road, Dubai, United Arab Emirates</div>
@@ -49,35 +50,36 @@ export default function EasaLanding() {
               <div className="space-y-1">
                 <div className="text-xs text-gray-500">Contact</div>
                 <div className="font-medium">Tel: +971 50 184 5043 • +971 4 565 5443</div>
-                <div className="font-medium">Email: md@easagroup.com</div>
+                <div className="font-medium">Email: ceo@easagroup.com</div>
               </div>
             </div>
           </div>
 
           <div className="order-first lg:order-last">
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
-              <div className="relative h-96">
+              <div className="relative h-64 sm:h-80 lg:h-96">
                 <div className="flex animate-[slide_15s_infinite] h-full">
-                  <img src="big-card.png" alt="Solar Farm" className="w-full h-full object-cover flex-shrink-0" />
-                 
+                  <img src="https://picsum.photos/800/400?random=10" alt="Solar Farm" className="w-full h-full object-cover flex-shrink-0" />
+                  <img src="https://picsum.photos/800/400?random=11" alt="Solar Panels" className="w-full h-full object-cover flex-shrink-0" />
+                  <img src="https://picsum.photos/800/400?random=12" alt="Green Hydrogen" className="w-full h-full object-cover flex-shrink-0" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="services" className="py-16">
+        <section id="services" className="py-12 sm:py-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">Our Services</h3>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Comprehensive solar energy solutions and asset management driving the clean energy transition.</p>
+            <h3 className="text-2xl sm:text-3xl font-bold">Our Services</h3>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto px-4">Comprehensive solar energy solutions and asset management driving the clean energy transition.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow">
-              <img src="https://picsum.photos/400/200?random=20" alt="Asset Management" className="w-full h-48 object-cover rounded-lg mb-6" />
-              <h4 className="text-xl font-semibold mb-4">Asset Management</h4>
-              <p className="text-gray-600 mb-4">Complete lifecycle management of renewable energy assets with performance optimization and value creation.</p>
-              <ul className="text-gray-600 space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-4 sm:p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow">
+              <img src="https://picsum.photos/400/200?random=20" alt="Asset Management" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Asset Management</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Complete lifecycle management of renewable energy assets with performance optimization and value creation.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base">
                 <li>• Portfolio performance monitoring</li>
                 <li>• Preventive maintenance programs</li>
                 <li>• Financial optimization</li>
@@ -85,11 +87,11 @@ export default function EasaLanding() {
               </ul>
             </div>
 
-            <div className="p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow">
-              <img src="https://picsum.photos/400/200?random=21" alt="Solar Energy" className="w-full h-48 object-cover rounded-lg mb-6" />
-              <h4 className="text-xl font-semibold mb-4">Solar Energy</h4>
-              <p className="text-gray-600 mb-4">Leading solar installations from utility-scale farms to distributed rooftop systems across the Middle East.</p>
-              <ul className="text-gray-600 space-y-2">
+            <div className="p-4 sm:p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow">
+              <img src="https://picsum.photos/400/200?random=21" alt="Solar Energy" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Solar Energy</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Leading solar installations from utility-scale farms to distributed rooftop systems across the Middle East.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base">
                 <li>• Utility-scale solar farms (100MW+)</li>
                 <li>• Rooftop solar installations</li>
                 <li>• Solar-plus-storage systems</li>
@@ -98,11 +100,11 @@ export default function EasaLanding() {
               </ul>
             </div>
 
-            <div className="p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow">
-              <img src="https://picsum.photos/400/200?random=22" alt="Green Hydrogen" className="w-full h-48 object-cover rounded-lg mb-6" />
-              <h4 className="text-xl font-semibold mb-4">Green Hydrogen</h4>
-              <p className="text-gray-600 mb-4">Innovative green hydrogen production facilities powered by solar energy for industrial applications.</p>
-              <ul className="text-gray-600 space-y-2">
+            <div className="p-4 sm:p-6 rounded-lg border shadow-lg hover:shadow-xl transition-shadow sm:col-span-2 lg:col-span-1">
+              <img src="https://picsum.photos/400/200?random=22" alt="Green Hydrogen" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Green Hydrogen</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Innovative green hydrogen production facilities powered by solar energy for industrial applications.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base">
                 <li>• Solar-powered electrolysis</li>
                 <li>• Hydrogen storage facilities</li>
                 <li>• Industrial supply chains</li>
@@ -112,13 +114,13 @@ export default function EasaLanding() {
           </div>
         </section>
 
-        <section id="projects" className="py-16">
+        <section id="projects" className="py-12 sm:py-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">Projects Done Till Now</h3>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Leading solar energy developments across the Middle East, from utility-scale farms to green hydrogen facilities.</p>
+            <h3 className="text-2xl sm:text-3xl font-bold">Projects Done Till Now</h3>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto px-4">Leading solar energy developments across the Middle East, from utility-scale farms to green hydrogen facilities.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               { title: "Al Dhafra Solar Farm", desc: "2GW utility-scale solar project with bifacial panels", type: "Solar", capacity: "2,000 MW" },
               { title: "NEOM Green Hydrogen", desc: "Solar-powered electrolysis facility for hydrogen export", type: "Hydrogen", capacity: "650 MW" },
@@ -131,9 +133,9 @@ export default function EasaLanding() {
                 <img 
                   src={`https://picsum.photos/400/250?random=${i + 30}`} 
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-40 sm:h-48 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className={`px-3 py-1 text-xs rounded-full font-medium ${
                       project.type === 'Solar' ? 'bg-yellow-100 text-yellow-700' : 'bg-blue-100 text-blue-700'
@@ -142,7 +144,7 @@ export default function EasaLanding() {
                     </span>
                     <span className="text-xs text-gray-500">{project.capacity}</span>
                   </div>
-                  <h5 className="font-semibold text-lg mb-2">{project.title}</h5>
+                  <h5 className="font-semibold text-base sm:text-lg mb-2">{project.title}</h5>
                   <p className="text-sm text-gray-600">{project.desc}</p>
                 </div>
               </div>
@@ -150,16 +152,16 @@ export default function EasaLanding() {
           </div>
         </section>
 
-        <section id="contact" className="py-16">
+        <section id="contact" className="py-12 sm:py-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">Contact Us</h3>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">Get in touch for solar energy projects, green hydrogen solutions, and asset management services.</p>
+            <h3 className="text-2xl sm:text-3xl font-bold">Contact Us</h3>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto px-4">Get in touch for solar energy projects, green hydrogen solutions, and asset management services.</p>
           </div>
 
-          <div className="w-full max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="w-full max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
               <div>
-                <h4 className="text-xl font-semibold mb-6">Send us a message</h4>
+                <h4 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Send us a message</h4>
                 <form className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
@@ -178,23 +180,23 @@ export default function EasaLanding() {
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold mb-6">Contact Information</h4>
+                <h4 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Contact Information</h4>
                 <div className="space-y-4">
                   <div>
                     <h5 className="font-medium text-gray-900">Head Office</h5>
-                    <p className="text-gray-600">Level 6, Code Business Tower<br />Al-Barsha Road<br />Dubai, United Arab Emirates</p>
+                    <p className="text-gray-600 text-sm sm:text-base">Level 6, Code Business Tower<br />Al-Barsha Road<br />Dubai, United Arab Emirates</p>
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-900">Phone</h5>
-                    <p className="text-gray-600">+971 50 184 5043<br />+971 4 565 5443</p>
+                    <p className="text-gray-600 text-sm sm:text-base">+971 50 184 5043<br />+971 4 565 5443</p>
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-900">Email</h5>
-                    <p className="text-gray-600">ceo@easagroup.com</p>
+                    <p className="text-gray-600 text-sm sm:text-base">ceo@easagroup.com</p>
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-900">Business Hours</h5>
-                    <p className="text-gray-600">Sunday - Thursday: 9:00 AM - 6:00 PM<br />Friday - Saturday: Closed</p>
+                    <p className="text-gray-600 text-sm sm:text-base">Sunday - Thursday: 9:00 AM - 6:00 PM<br />Friday - Saturday: Closed</p>
                   </div>
                 </div>
               </div>
@@ -203,9 +205,9 @@ export default function EasaLanding() {
         </section>
       </main>
 
-      <footer className="py-4 border-t">
-        <div className="w-full px-6 lg:px-8 text-center">
-          <p className="text-sm text-gray-600">© {new Date().getFullYear()} EASA Group — Solar Energy & Green Hydrogen. All rights reserved.</p>
+      <footer className="py-4 border-t bg-gray-50">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-xs sm:text-sm text-gray-600">© {new Date().getFullYear()} EASA Group — Solar Energy & Green Hydrogen. All rights reserved.</p>
         </div>
       </footer>
     </div>
