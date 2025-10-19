@@ -158,7 +158,7 @@ export default function EasaLanding() {
                 <div className="relative h-40 sm:h-48 overflow-hidden">
                   <div className="flex animate-[slide_12s_infinite] h-full">
                     <img src={i === 0 ? '/solar1.jpg' : i === 1 ? '/green1.jpg' : i === 2 ? '/solar3.jpg' : i === 3 ? '/green5.jpg' : i === 4 ? '/solar4.jpg' : '/solar5.jpg'} alt={`${project.title} 1`} className="w-full h-full object-cover flex-shrink-0" />
-                    <img src={i === 0 ? '/solar2.jpg' : i === 1 ? '/green2.jpg' : i === 2 ? '/solar.png' : i === 3 ? '/green4.jpg' : i === 4 ? '/solar1.jpg' : '/solar3.jpg'} alt={`${project.title} 2`} className="w-full h-full object-cover flex-shrink-0" />
+                    <img src={i === 0 ? '/solar2.jpg' : i === 1 ? '/green2.jpg' : i === 2 ? '/solar.png' : i === 3 ? '/green.png' : i === 4 ? '/solar1.jpg' : '/solar3.jpg'} alt={`${project.title} 2`} className="w-full h-full object-cover flex-shrink-0" />
                     <img src={i === 0 ? '/solar3.jpg' : i === 1 ? '/green.png' : i === 2 ? '/solar4.jpg' : i === 3 ? '/green3.jpg' : i === 4 ? '/solar.png' : '/solar6.jpg'} alt={`${project.title} 3`} className="w-full h-full object-cover flex-shrink-0" />
                   </div>
                 </div>
