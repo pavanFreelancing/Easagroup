@@ -61,8 +61,8 @@ export default function EasaLanding() {
             <p className="mt-4 text-gray-600 max-w-3xl mx-auto px-4">Comprehensive solar energy solutions and asset management driving the clean energy transition.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
               <img src="/asset.png" alt="Asset Management" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
               <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Asset Management</h4>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Complete lifecycle management of renewable energy assets with performance optimization and value creation.</p>
@@ -72,10 +72,10 @@ export default function EasaLanding() {
                 <li>• Financial optimization</li>
                 <li>• Risk management</li>
               </ul>
-              <a href="/asset-management" className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+              <a href="/asset-management" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
             </div>
 
-            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
               <img src="/solar.png" alt="Solar Energy" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
               <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Solar Energy</h4>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Leading solar installations from utility-scale farms to distributed rooftop systems across the Middle East.</p>
@@ -86,10 +86,10 @@ export default function EasaLanding() {
                 <li>• Grid integration solutions</li>
                 <li>• O&M services</li>
               </ul>
-              <a href="/solar-energy" className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+              <a href="/solar-energy" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
             </div>
 
-            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow sm:col-span-2 lg:col-span-1">
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
               <img src="/green.png" alt="Green Hydrogen" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
               <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Green Hydrogen</h4>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Innovative green hydrogen production facilities powered by solar energy for industrial applications.</p>
@@ -99,7 +99,72 @@ export default function EasaLanding() {
                 <li>• Industrial supply chains</li>
                 <li>• Export terminal development</li>
               </ul>
-              <a href="/green-hydrogen" className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+              <a href="/green-hydrogen" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+            </div>
+
+
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
+              <img src="/port-construction.jpg" alt="Port Construction" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Port Construction</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Design and construction of new ports, terminals and marine infrastructure.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base mb-6">
+                <li>• Quay walls, berths & jetties</li>
+                <li>• Dredging & land reclamation</li>
+                <li>• Terminal & yard development</li>
+                <li>• Quality, safety & compliance</li>
+              </ul>
+              <a href="/port-construction" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+            </div>
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
+              <img src="/port-management.jpg" alt="Port Management" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Port Management</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Operating and managing ports for efficient cargo handling and vessel turnaround.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base mb-6">
+                <li>• Terminal & berth operations</li>
+                <li>• Cargo & container handling</li>
+                <li>• Vessel traffic & scheduling</li>
+                <li>• Port facilities maintenance</li>
+              </ul>
+              <a href="/port-management" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+            </div>
+
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
+              <img src="/insurance.jpg" alt="Global Insurance" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Global Insurance</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Tailored insurance solutions protecting assets, projects and operations worldwide.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base mb-6">
+                <li>• Property & project insurance</li>
+                <li>• Marine & cargo cover</li>
+                <li>• Energy & industrial risk</li>
+                <li>• Claims advisory & support</li>
+              </ul>
+              <a href="/global-insurance" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+            </div>
+
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2 lg:col-start-2">
+              <img src="/machinery.jpg" alt="Heavy Machinery" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Heavy Machinery</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Supply and leasing of heavy equipment for construction, infrastructure and industrial projects.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base mb-6">
+                <li>• Trucks</li>
+                <li>• Excavators</li>
+                <li>• Piling machines</li>
+                <li>• Maintenance & operator support</li>
+              </ul>
+              <a href="/heavy-machinery" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
+            </div>
+
+            <div className="p-4 sm:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col lg:col-span-2">
+              <img src="/diesel.jpg" alt="Diesel Trading" className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 sm:mb-6" />
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Diesel Trading</h4>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">Reliable sourcing and supply of diesel for industrial, commercial and marine customers.</p>
+              <ul className="text-gray-600 space-y-2 text-sm sm:text-base mb-6">
+                <li>• Bulk diesel supply</li>
+                <li>• Storage & terminal access</li>
+                <li>• Transport & delivery</li>
+                <li>• Quality-assured fuel</li>
+              </ul>
+              <a href="/diesel-trading" className="mt-auto self-start inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors">Know More</a>
             </div>
           </div>
         </section>
